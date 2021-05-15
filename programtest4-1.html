@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template for CIT 160</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        function calculate()
+         {
+           var firstNumber = document.getElementById("num1").value;
+           var secondNumber = document.getElementById("num2").value;
+           var result = parseFloat(firstNumber) + parseFloat(secondNumber);
+           if (!isNaN(result))
+           
+           {
+               document.getElementById("answer").innerHTML = result;
+           }
+
+            
+         }       
+        </script>
+</head>
+
+<body>
+        <h1>Week 4: Add Numbers</h1>
+        
+        <h2>Ahmed Fofana</h2>
+        number 1 <input type="text" id="num1"> <br><br>
+        number 2 <input type="text" id="num2"> <br><br>
+        <div id="answer"></div>
+        <button onclick="calculate()">calculate</button>        
+
+    <footer>&copy;2021 &bull; Ahmed Fofana &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    
+</body>
+
+</html>
