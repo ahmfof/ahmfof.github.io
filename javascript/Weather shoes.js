@@ -2,13 +2,13 @@ function footwear() {
     let footwear
     let weather = document.getElementById('weather').value;
     switch (weather){
-        case "hot":
+        case "Hot":
             footwear = "Sandals";
             break;
-        case "rain":
+        case "Rain":
             footwear = "Galoshoes";
             break;
-        case "snow":
+        case "Snow":
             footwear = "Boots";
             break;
         default:
