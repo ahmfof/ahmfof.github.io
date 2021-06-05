@@ -25,10 +25,12 @@
 
   <script>
   function discountDay () {
+      // INPUT
   let dayOfweek = new Date ().getDay();
   let sub = parseInt(document.getElementById('subtotal').value);
   let tax;
   let price;
+  // PROCESSING
   if (sub > 50 && (dayOfweek == 2 || dayOfweek == 3)) {
   price = sub - (sub * .1);
   tax = price + (price * .06);
@@ -36,6 +38,7 @@
   else {
   tax = sub + (sub * .06);
   }
+  // OUTPUT
   document.getElementById('total').innerHTML = "$" + tax;
   }
  
