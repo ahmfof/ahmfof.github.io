@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+ <head>
+    <meta charset="utf-8" />
+        <title>CIT 160 </title>
+        <link href="css/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1>Week 7: Discount</h1>
+            <h2>Ahmed Fofana</h2>
+        </header>
+
+        <main>
+            <h3> Discount Day </h3>
+            <label>Customer Subtotal Amount $  <input type="text" id="subtotal" size="10" placeholder="numbers only"></label>
+            <button type="button" onclick="discountDay()">Calculate</button>
+            <hr>
+            Total is : <div id="total"></div>
+        </main>
+        <footer>
+            &copy;2021 &bull; Ahmed Fofana &bull; BYU-Idaho &bull; CIT 160
+        </footer>
+ <title>Discount Days</title>
+
+  <script>
+  function discountDay () {
+  let dayOfweek = new Date ().getDay();
+  let sub = parseInt(document.getElementById('subtotal').value);
+  let tax;
+  let price;
+  if (sub > 50 && (dayOfweek == 2 || dayOfweek == 3)) {
+  price = sub - (sub * .1);
+  tax = price + (price * .06);
+  }
+  else {
+  tax = sub + (sub * .06);
+  }
+  document.getElementById('total').innerHTML = "$" + tax;
+  }
+ 
+ </script>
+ </head>
+ </body>
+ </html>
