@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+   <head>
+   <meta charset="utf-8">
+   <title>CIT 160 </title>
+   <link href="css/style.css" rel="stylesheet"/>
+   </head>
+ <body>
+    <header>
+        <h1>Week 8: Sum of all integers </h1>
+        <h2>Ahmed Fofana</h2>
+    </header>
+
+    <main>
+        <h3> Sum of all integers </h3>
+        <label>Please enter an integer number: <input type='text' id='input_number'> </label>
+        <button type='button' onclick='sum_odds()'>Sum of all integers is : </button>
+        <div id='output'></div>
+        <hr>
+        
+    </main>
+    <footer>
+        &copy;2021 &bull; Ahmed Fofana &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+
+   <title>Sum of all odds</title>
+   <script>
+    function sum_odds() {
+    var user_number = parseInt(document.getElementById('input_number').value);
+    var total_sum=0;
+    var residue;
+    for (var i=1; i<=user_number;i++) {
+    residue = i%2;
+    if (residue!=0) {
+    total_sum=total_sum + i;
+    }
+    } 
+    document.getElementById('output').innerHTML =total_sum;
+    }
+   </script> 
+ </body>
+</html>
