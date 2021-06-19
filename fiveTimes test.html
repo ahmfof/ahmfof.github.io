@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Five Times Table From 1 - 12.</title>
+ <meta charset="utf-8">
+   <title>CIT 160 </title>
+   <link href="css/style.css" rel="stylesheet"/>
+ </head>
+    <body>
+     <header>
+        <h1>Week 9: Five Times Table From 1 to 12 </h1>
+        <h2>Ahmed Fofana</h2>
+      </header>
+
+     <main>
+        <h1> Five Times Table From 1 to 12</h1>
+        <h2>Press the button to display the table</h2>
+        <button type="button" onclick="fiveTimesTable()"><strong>Times Table</strong></button>
+        <div id="outputDiv"></div>
+        
+     </main>
+     <footer>
+        &copy;2021 &bull; Ahmed Fofana &bull; BYU-Idaho &bull; CIT 160
+     </footer>
+
+       <script type="text/javascript">
+         /* Program to print the five times table from 1 to 12 in this format:
+         5 x 1 = 5
+         5 x 2 = 10
+         5 x ...
+         Input: There will be no user input, program will use a loop to create the 5 times table.
+         Process: Define all the 5 times table between 1 and 12.
+         Output: The 5 times table will be displayed.
+         */
+         function fiveTimesTable() {
+         var display = ""; 
+         // The table output HTML
+
+         for (i = 1; i <= 12; i++) {
+         var multiplier = 5;
+         var result = i*5;
+
+         display += multiplier+" x "+i+" = "+result+"<br>";
+         //Add each line to our output HTML
+            }
+            document.getElementById("outputDiv").innerHTML = display;
+            }       
+       </script>
+   </head>
+
+ </body>
+ </html>
