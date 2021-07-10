@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>How Long to Invest</title>
+
+<script>
+/* Input: No user input
+ * Processing: Determine the number of months required
+ *     to grow an initial investment from $100 to at
+ *     least $103 if it grows at an annual rate of 6%.
+ * Output: The number of months.
+ */
+
+    function randomInteger() {
+    let min = 5;
+    let max = 11;
+
+    // Call the Math.random and Math.floor functions.
+    let r = min + Math.floor(Math.random() * (max - min));
+
+    // Display the random integer for the user to see.
+    document.getElementById('outputDiv').innerHTML = r;
+}
+
+</script>
+</head>
+
+<body>
+<button type="button" onclick="randomInteger()">Test</button>
+<div id="outputDiv"></div>        
+</body>       
+</html>
