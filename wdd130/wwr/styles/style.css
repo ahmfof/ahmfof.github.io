@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Nunito+Sans:ital,wght@1,200&display=swap');
+
 
 
 header {
-    background-color:rgba(20,30,13, .7);
+    background-color:rgba(26, 37, 18, 0.7);
+    text-align:left
+
 }
 
 
@@ -10,10 +14,13 @@ header {
     margin: 0 auto;
     background-color: white;
     }
-
+    main {
+        background-color: rgb(255, 242, 228);
+    }  
+    
 
 body {
-    background-color: #0c760a; 
+    background-color: #f6a70a; 
     max-width: 1600px;
     margin: 0 auto;
     padding: 10px;
@@ -21,16 +28,33 @@ body {
     text-align:left;
 }
 
+nav a {
+    text-decoration: none;
+    color: #100f0f;
+    text-align: center;
+    padding: 40px;
+}
+
+
 
 img {
     display:inline;
     margin: 0 auto;
     max-width: 960px;
+    
     } 
+
+    
 
 .home-title, .button-box, .hero-msg {
     text-align: center;
 }
+
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em
+}
+
 
 h4 {
     text-align: center;
@@ -38,6 +62,7 @@ h4 {
 
 .home-grid h2 {
     text-align: center;
+    margin: 0;
 } 
  
 
@@ -54,9 +79,21 @@ nav.a {
 .card-img {
     height: 300px;
     width: 300px;
-       
-       margin-left: 320px;    
+     margin-left: 320px;
+     border: 10px solid #d9c2a3;    
 
+}
+
+.mountains {
+    height: 400px;
+    width: 600px;
+    margin-left: 0px;
+     padding:  0px;
+     
+}
+
+main section img {
+    box-sizing: border-box;
 }
 
 .icon {
@@ -74,9 +111,28 @@ nav.a {
 .msg {
     text-align: center;
     background-color:rgba(20,30,13, .7);
+    background-color: #6f7364;
+    line-height: 1.5em;
 }
 
 footer {
     background-color:rgba(20,30,13, .7);
-    
+    text-align:left;
+    color: antiquewhite;    
+}
+
+.book, .join {
+    background-color: #d9c2a3;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+
+body {
+        font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
