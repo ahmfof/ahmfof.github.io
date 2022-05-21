@@ -1,48 +1,82 @@
-#background {
-    height: 725px;
-}
-body {
-    background-color: #f5f3f0; 
-    max-width: 2600px;
-    margin: 0 auto;
-    padding: 4em;
-    font-size: 10px;
-    text-align:center
-}
+
+
 header {
     background-color:rgba(20,30,13, .7);
 }
-footer {
-    background-color:rgba(20,30,13, .7);
+
+
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    }
+
+
+body {
+    background-color: #f1960e; 
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 18px;
+    text-align:left;
 }
-nav a:hover {
-    background-color: black;
-    background-color: black;
-    color: #f5f3f0;
-}  
+
+
 img {
     display:inline;
     margin: 0 auto;
-    max-width: 625px;
-} 
-.icon {
-    width: 50px;
-} 
-.img{
-    width: 700px;
-}
-.logo{
-    width: 100px;
-}
-nav a {
-    text-align:left;
-    color: #f5f3f0;
-    text-decoration: none;
-} 
-#content {
     max-width: 960px;
-    margin:0 auto
-  }
-main {
-    background-color: #f5f3f0;
-}  
+    } 
+
+.home-title, .button-box, .hero-msg {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.home-grid h2 {
+    text-align: center;
+} 
+ 
+
+nav { 
+    background-color: #ffea08;
+}
+nav.a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+
+.card-img {
+    height: 300px;
+    width: 300px;
+       
+       margin-left: 320px;    
+
+}
+
+.icon {
+    margin-left: ;
+    width: 40px;
+    height: 40px;
+}
+
+     
+.social {
+    padding: 10px;
+    text-align: left;
+}
+
+.msg {
+    text-align: center;
+    background-color:rgba(20,30,13, .7);
+}
+
+footer {
+    background-color:rgba(20,30,13, .7);
+    
+}
